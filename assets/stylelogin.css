@@ -1,0 +1,44 @@
+.main-content  {
+  width: 80px;
+}
+
+
+.form-login-base {
+   height: calc(100vh - 0px);
+}
+
+.form-login {
+  width: 300px;
+}
+
+.form-register{
+  width: 400px;
+}
+
+.link-reg {
+  font-size: .8rem;
+}
+
+.mynavbar {
+  background-color:rgb(21, 6, 119)
+}
+
+.navbaritem {
+  color: white;
+  
+}
+
+.title-contactdata {
+  text-align: right ;
+  
+}
+
+.hideform {
+  display: none;
+}
+
+.borderform {
+  border-top: 6px solid purple !important;
+
+}
+
