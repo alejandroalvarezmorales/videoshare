@@ -13,11 +13,14 @@
             if(isset($_POST['email']) && isset($_POST['password']) ){
                 $email = $_POST['email'];
                 $password = $_POST['password'];
+            } else {
+                return array('data' => array());
             }
 
 
             $sql = "SELECT * FROM USUARIOS WHERE email = :email AND password = :password";
             $data = DBAccessModel::find($sql,array( "email" => $email, "password" => $password) );
+            
 
             if(sizeof($data['data'])>0){
                 $_SESSION["authenticated"] = 1;

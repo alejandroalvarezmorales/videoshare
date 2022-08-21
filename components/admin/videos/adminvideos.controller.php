@@ -6,9 +6,15 @@
     class AdminVideosController{
 
         public static function render(){
-            echo AdminVideosView::print(array());
+
+            $status = AdminVideosModel::uploadFile();
+            $videolist = AdminVideosModel::getFiles();
+            $data = array("status" => $status, "lista" => $videolist);
+            echo AdminVideosView::print($data);
 
         }
+
+     
 
 
     }

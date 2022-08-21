@@ -9,6 +9,9 @@
                 'phone' => 0,
                 'password' => 0
             );
+
+            
+
             $data = array_intersect_key($_POST,$fields);
             $sql = SQLHelpers::get_insert(array('__p'=>'usuarios'),$data);
             Logger::consolelog($_POST);

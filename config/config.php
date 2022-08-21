@@ -6,7 +6,9 @@
         "dbpass" => "",
         "db" => "mydb",
         "debug" => 0,
-        "maintenance" => 0
+        "maintenance" => 0,
+        "appsdir" => dirname(__DIR__),
+        "filesdir" => dirname(__DIR__). '\\'."files"
     ]);
 
 

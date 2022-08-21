@@ -12,9 +12,6 @@
             $result = InicioModel::setData();
             $data['result'] = $result;
 
-            Logger::consolelog($result);
-            Logger::consolelog($_SESSION);
-
             echo InicioView::print($data);
 
 

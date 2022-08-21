@@ -120,7 +120,7 @@
 
 
         public static function unAuthenticatedRedirect($apply = true){
-            if ( !Authentication::isAuthenticated() &&  $apply ) {
+            if ( !Authentication::isAuthenticated() && $apply ) {
                 LoginController::render();
                 MainController::getFoot();
                 

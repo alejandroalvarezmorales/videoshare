@@ -99,7 +99,10 @@ class DBAccessModel
 
         $bindValues = array_merge($id, $values);
 
+        Logger::consolelog($bindValues);
+
         $stmt = $connection->prepare($pquery);
+        
         try {
             $stmt->execute($bindValues);
         } catch (Exception $e) {
@@ -119,4 +122,6 @@ class DBAccessModel
         $connection = NULL;
         return $data;
     }
+    
+
 }

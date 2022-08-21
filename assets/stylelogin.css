@@ -42,3 +42,14 @@
 
 }
 
+.adduserform{
+  display: inline;
+}
+
+.datavideo{
+  font-size: 0.7rem !important;
+}
+
+.videoitem {
+  border-radius: 16px;
+}

@@ -11,6 +11,7 @@
         }
 
         public static function logOff(){
+            $_SESSION["authenticated"] = 0;
             session_destroy();
             header('Location: ?p=login');
         }
