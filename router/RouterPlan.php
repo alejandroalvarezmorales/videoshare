@@ -54,7 +54,7 @@
                     SharedController::renderSidebarFoot();
 
                     break;
-                case 'cursos':
+                case 'videos':
 
                     self::unAuthenticatedRedirect(true);
                     SharedController::renderNav();
