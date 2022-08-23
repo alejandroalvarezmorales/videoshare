@@ -7,7 +7,7 @@
             $view = '          
                 <div class="container-fluid">
                     <div class="row ps-3 pt-2">
-                        <div class="col-9 p-3">                           
+                        <div class="col-10 p-3">                           
             ';
 
 
@@ -28,7 +28,7 @@
         public static function printHeadSidebar($data){
 
             $view = '
-                        <div class="col-3 p-3 br-1">   
+                        <div class="col p-3 br-1">   
             ';
 
 

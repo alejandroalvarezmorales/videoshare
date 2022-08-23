@@ -70,7 +70,7 @@ class DBAccessModel
         return $data;
     }
 
-    public static function delete(string $pquery, array $id)
+    public static function delete(string $pquery, string $id)
     {
         $connection = Connection::getConnection();
         $stmt = $connection->prepare($pquery);

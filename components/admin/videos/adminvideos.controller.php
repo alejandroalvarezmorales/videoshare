@@ -8,9 +8,15 @@
         public static function render(){
 
             $status = AdminVideosModel::uploadFile();
+            $useradded = AdminVideosModel::addUserVideo();
+            $delUserVideo = AdminVideosModel::delUserVideo();
+            Logger::consolelog($delUserVideo);
+            $updatedName = AdminVideosModel::updateName();
+            $deleteVideo = AdminVideosModel::deleteVideo();
             $videolist = AdminVideosModel::getFiles();
             $data = array("status" => $status, "lista" => $videolist);
             echo AdminVideosView::print($data);
+
 
         }
 

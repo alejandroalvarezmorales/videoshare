@@ -61,8 +61,8 @@
                         Pendientes de autorizar.
                     </div>         
 
-                    <table class="table  table-bordered table-sm   table-hover ">
-                    <thead class="alert-warning text-white">
+                    <table class="table table-sm   table-hover ">
+                    <thead class="">
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">Name</th>
@@ -91,8 +91,8 @@
                     </div>
                     
 
-                    <table class="table  table-bordered table-sm   table-hover">
-                        <thead class="alert-success text-white">
+                    <table class="table  table-sm   table-hover">
+                        <thead class="">
                             <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Name</th>
@@ -121,8 +121,8 @@
                         Bloqueados
                     </div>   
 
-                    <table class="table  table-bordered table-sm   table-hover">
-                    <thead class="alert-danger text-white">
+                    <table class="table   table-sm   table-hover">
+                    <thead class="">
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">Name</th>
