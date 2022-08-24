@@ -12,6 +12,8 @@
 
         public static function logOff(){
             $_SESSION["authenticated"] = 0;
+            $_SESSION["userdata"] = array();
+            $_SESSION["videosavailable"] = array();
             session_destroy();
             header('Location: ?p=login');
         }

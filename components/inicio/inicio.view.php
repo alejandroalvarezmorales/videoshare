@@ -7,7 +7,9 @@
             $uri = htmlspecialchars($_SERVER['REQUEST_URI']);
 
             $data = $context['userdata'][0];
+            $videos = $context['videosavailable'];
             $result = $context['result'];
+
 
             if (isset($_POST['guardar'])){
                 if ( isset($result['ok']) && $result['ok'] == false){
@@ -166,15 +168,15 @@
                                     <tbody>
                                         <tr>
                                             <th class="text-right p-1">
-                                                Id: 
+                                                User ID: 
                                             </th>                                        
                                             <td>
-                                                2
+                                                '.$data['id'].'
                                             </td>
                                         </tr>
                                         <tr>
                                             <th class="text-right p-1">
-                                            cuenta de usuario:  
+                                            Cuenta de usuario:  
                                             </th>                                        
                                             <td>
                                                 '. $data["email"] .'
@@ -182,7 +184,7 @@
                                         </tr>
                                         <tr>
                                             <th class="text-right p-1">
-                                            Fecha de registro:
+                                            Fecha de Registro:
                                             </th>                                        
                                             <td>
                                                 '. $data["created_at"] .'
@@ -198,10 +200,18 @@
                                         </tr>
                                         <tr>
                                             <th class="text-right p-1">
-                                            Total de cursos.
+                                                Fecha de Vencimiento: 
                                             </th>                                        
                                             <td>
-                                               3
+                                               '.$data['vencimiento'].'
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right p-1">
+                                                Total de cursos: 
+                                            </th>                                        
+                                            <td>
+                                               '.sizeof($videos['data']).'
                                             </td>
                                         </tr>
                                 

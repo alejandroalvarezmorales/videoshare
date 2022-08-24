@@ -8,17 +8,15 @@
             
                 <div class="container mt-4">
                     <video id="video" width="100%" controls controlslist="nodownload">
-                        <source src="files/7_1030_R5Ub" type="video/mp4">
+                        <source src="files'.$data['filename'].'" type="video/mp4">
                     </video> 
                     <div class="mt-3">
-                        <div class="h5">
-                            <strong>
-                                Curso de contabilidad.
-                            </strong>
+                        <div class="h3 font-weight-bold">
+                            '.$data['video_name'].'
                         </div>
-                        <p>
-                            Recomposicion oficial de contabilidad impuesto y libros diarios.
-                        </p>
+                        <h5>
+                            '.$data['description'].'
+                        </h5>
                     </div>
                 </div>
                 
@@ -44,7 +42,7 @@
 
 
                 </script>
-                <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script>    
+                <scrip disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></scrip>    
             
             ';
 

@@ -7,7 +7,12 @@
 
 
         public static function render(){
-            echo CursosView::print(array());
+
+            $result = CursosModel::getData();
+
+            Logger::consolelog($result);
+
+            echo CursosView::print($result);
         }
 
     }

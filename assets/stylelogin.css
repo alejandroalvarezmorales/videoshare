@@ -53,3 +53,12 @@
 .videoitem {
   border-radius: 16px;
 }
+
+.optionvideo{
+  font-size: .7rem;
+
+}
+
+.optionvideo:active{
+  
+}

@@ -57,7 +57,7 @@
                             </div>
 
                             <div id="name_data_'.$data['id'].'" class="col-6 mt-3 ">
-                                <div class="h6">
+                                <div class="h4">
                                     <strong>
                                         '.$data['name'].'
                                     </strong>
@@ -137,7 +137,6 @@
 
         }
 
-
         private static function getScript(){
             $script = '<script>
                             $(".usersadded").hide();
@@ -152,8 +151,9 @@
 
                             function showUsers(id){
                                 $("#video_users_"+id).toggle();
-                                localStorage.setItem("showVideoIn",id);
+                                localStorage.setItem("showVideoIn",id);                                
                             }
+
 
                        </script>';
 
@@ -200,3 +200,6 @@
     }
 
 ?>
+<script>
+
+</script>

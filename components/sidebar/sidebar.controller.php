@@ -8,7 +8,8 @@
 
         public static function render(){
 
-            echo SidebarView::print(array());
+            $data = SidebarModel::getData();
+            echo SidebarView::print($data);
 
 
         }

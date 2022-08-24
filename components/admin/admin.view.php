@@ -38,8 +38,21 @@
             
             ';
 
+            $view .= self::clean();
+
             return $view;
 
+        }
+
+        private static function clean(){
+            $script = '';
+            if (! isset($_GET['o']) || ( isset($_GET['o']) && $_GET['o'] != 'videos')){
+                $script .= '<script>
+                                localStorage.removeItem("showVideoIn");
+                            </script>
+                            ';
+            }
+            return $script;
         }
 
     }
